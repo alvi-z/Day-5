@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Day 5 — Three Days to Go</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     PAGE 1 — THREE DAYS TO GO
+====================================================== -->
+
+<section
+  class="page page-one"
+  id="page1"
+>
+
+  <div
+    class="cloud-layer"
+    id="clouds1"
+  ></div>
+
+
+  <div class="page-content">
+
+    <p class="eyebrow">
+      THE COUNTDOWN CONTINUES
+    </p>
+
+
+    <div class="day-number">
+      V
+    </div>
+
+
+    <h1>
+      THREE DAYS<br>
+      TO GO
+    </h1>
+
+
+    <div class="sparkles">
+      ✦ ˚₊‧ ✦ ˚₊‧ ✦
+    </div>
+
+
+    <p class="handwritten">
+      Welcome to Day 5.
+    </p>
+
+
+    <p class="subtext">
+      There's a little question waiting for you.
+    </p>
+
+
+    <button
+      class="main-button"
+      onclick="goToPage(2)"
+    >
+      Proceed →
+    </button>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 2 — RIDDLE INTRO
+====================================================== -->
+
+<section
+  class="page hidden page-two"
+  id="page2"
+>
+
+  <div
+    class="cloud-layer"
+    id="clouds2"
+  ></div>
+
+
+  <div class="cotton-card">
+
+    <p class="eyebrow">
+      TODAY'S CHALLENGE
+    </p>
+
+
+    <div class="small-sparkle">
+      ✦
+    </div>
+
+
+    <h2>
+      One question.<br>
+      One correct answer.
+    </h2>
+
+
+    <div class="cloud-divider">
+      ☁︎ ───── ☁︎ ───── ☁︎
+    </div>
+
+
+    <p class="riddle-question">
+      What was the best day you've had
+      in 2026 so far?
+    </p>
+
+
+    <p class="objective">
+      And yes, this is an objective question.
+    </p>
+
+
+    <div class="date-instruction">
+      ENTER THE DATE
+    </div>
+
+
+    <div class="date-format">
+      DD / MM / YYYY
+    </div>
+
+
+    <input
+      type="text"
+      id="dateAnswer"
+      class="date-input"
+      placeholder="DD / MM / YYYY"
+      maxlength="10"
+      inputmode="numeric"
+      autocomplete="off"
+    >
+
+
+    <button
+      class="main-button"
+      onclick="checkDate()"
+    >
+      Submit answer
+    </button>
+
+
+    <div
+      id="dateResult"
+      class="date-result"
+    ></div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 3 — LETTER COVER
+====================================================== -->
+
+<section
+  class="page hidden page-three"
+  id="page3"
+>
+
+  <div
+    class="cloud-layer"
+    id="clouds3"
+  ></div>
+
+
+  <div class="letter-intro">
+
+    <p class="eyebrow">
+      YOU GOT IT RIGHT
+    </p>
+
+
+    <h2>
+      A little something<br>
+      for you.
+    </h2>
+
+
+    <p class="tap-instruction">
+      Tap the letter to open it.
+    </p>
+
+
+    <div
+      class="letter-cover"
+      id="letterCover"
+      onclick="openLetter()"
+    >
+
+      <img
+        src="https://i.ibb.co/HLwJtZmb/IMG-0657.png"
+        alt="A letter waiting to be opened"
+      >
+
+      <div class="cover-overlay">
+        TAP TO OPEN
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 4 — THE LETTER
+====================================================== -->
+
+<section
+  class="page hidden page-four"
+  id="page4"
+>
+
+  <div
+    class="cloud-layer"
+    id="clouds4"
+  ></div>
+
+
+  <div class="letter-page">
+
+    <div class="letter-paper">
+
+      <div class="letter-decoration">
+        ♡
+      </div>
+
+
+      <p class="letter-greeting">
+        My dearest Albab,
+      </p>
+
+
+      <div class="letter-body">
+
+        <p>
+          Comparing this "gift" to the last few ones,
+          it might be kind of generic and basic. But since
+          my forté lies in words, I wanted to dedicate today
+          to writing you a letter. Hope this one doesn't seem
+          too little.
+        </p>
+
+
+        <p>
+          I honestly have so much to say about you.
+          If I started, I could probably write pages.
+          I know we have already known each other for
+          2 months, but you mean more to me than almost
+          anyone in my life.
+        </p>
+
+
+        <p>
+          I had always heard that with the right people,
+          time doesn't matter. Still to me, time was one of
+          the greatest measures of closeness. But ever since
+          we became friends, and I saw how I felt more
+          comfortable with you than anyone I've known for
+          years, I knew this statement to be true.
+        </p>
+
+
+        <p class="highlight-line">
+          I feel so at home with you.
+        </p>
+
+
+        <p>
+          Thank you for being the most kind and humble
+          person; the way you always put me first, the most
+          thoughtful person; the way you're always getting
+          me reassurance and gifts, for being the safest
+          person; the way with you I never have a worry in
+          the world, thank you for being the most
+          understanding person, the way you're always
+          letting me have my time and space, and lastly
+          thank you for being such a chill person; the way
+          you always joke around with me and make me laugh.
+        </p>
+
+
+        <p>
+          You're everything I could ask for in a friend.
+        </p>
+
+
+        <p class="final-message">
+          Happy three days to go sweetheart.
+          I love you&lt;3
+        </p>
+
+
+        <p class="signature">
+          Xoxo<br>
+          Your Vinnie
+        </p>
+
+      </div>
+
+
+      <div class="letter-bottom">
+        ♡
+      </div>
+
+    </div>
+
+
+    <div class="day-complete">
+
+      DAY 5 / 8 ✓
+
+      <br><br>
+
+      <span>
+        See you tomorrow.
+      </span>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

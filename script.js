@@ -168,8 +168,8 @@ function checkDate() {
 
   /*
      Remove spaces so that
-     04 / 06 / 2026 and
-     04/06/2026 both work.
+     04 - 07 - 2026 and
+     04-07-2026 both work.
   */
 
   const entered =
@@ -183,11 +183,11 @@ function checkDate() {
 
   /*
      Correct answer:
-     04 / 06 / 2026
+     04 - 07 - 2026
   */
 
   const correct =
-    "04/06/2026";
+    "04-07-2026";
 
 
   if (
@@ -195,7 +195,7 @@ function checkDate() {
   ) {
 
     result.innerHTML =
-      "Correct. You know the answer.";
+      "Correct! Good job.";
 
     input.style.borderColor =
       "#8eaf87";
